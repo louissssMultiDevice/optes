@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FGTR Circle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ff6b81;
+      text-shadow: 1px 1px 5px rgba(255, 107, 129, 0.5);
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      color: #f1f1f1;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ffbaba;
+      margin-bottom: 20px;
+    }
+
+    .join-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #ff6b81, #ff4757);
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.4s ease;
+    }
+
+    .join-btn::after {
+      content: "";
+      position: absolute;
+      top: 0; left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: skewX(-25deg);
+      transition: all 0.6s ease;
+    }
+
+    .join-btn:hover::after {
+      left: 130%;
+    }
+
+    .join-btn:hover {
+      background: linear-gradient(135deg, #ff4757, #ff6b81);
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.png" alt="FGTR Logo" class="logo">
+    <h1>ANDA JAGO TAPI GA TERKENAL?</h1>
+    <p>TENANG, JOIN CIRCLE <b>FGTR</b> AJA! MEMBER PADA JAGO-JAGO, DAN KITA ADAIN LAGA TIAP HARI!</p>
+    <p class="highlight">Minimal skor 5-7 saat optes untuk masuk!  
+    Buruan join dan jadilah yang terbaik!</p>
+    <a href="https://wa.me/6287750113832" target="_blank" class="join-btn">Join CC</a>
+    <p class="contact">Minat? Chat Admin, click button di atas</p>
+  </div>
+
+</body>
+  </html>
